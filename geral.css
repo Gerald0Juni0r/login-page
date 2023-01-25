@@ -82,6 +82,15 @@ input {
     background-color: #16a1b9;
     border-radius: 80px 80px 15px 15px;
 }
+.form-login form {
+   padding-top: 25%;
+}
+/* .form-login form input {
+    margin-bottom: 20px;
+}
+.checkbox-senha {
+    padding-top: 3px;
+} */
 .form-login button {
     background-color: #1E2A4F;
 }
@@ -97,34 +106,3 @@ input {
     width: 400px;
     height: 400px;
 }
-
-@media (max-width = 800px) {
-    #imagem-login {
-        width: 200px;
-        height: 200px;
-        margin: 0 50%;
-    }
-}
-/*
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.container {
-    background-color: whitesmoke;
-    padding: 6px;
-    width: 350px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-
-}
-*/
