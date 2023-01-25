@@ -6,6 +6,7 @@
     text-decoration: none;
     color: #1E2A4F;
 }
+
 body {
     min-height: 100vh;
     display: flex;
@@ -29,6 +30,7 @@ input {
     width: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .section-principal form {
     display: flex;
@@ -36,13 +38,18 @@ input {
     gap: 4px;
     padding-top: 20px;
 }
+.form-cadastrar.active{
+    bottom: 79%;
+}
 .form-cadastrar {
     position: relative;
     background-color: #1CC0A9;
     box-shadow: 0px 5px 10px rgb(0 0 0 / 25%);
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 20px 30px 60px;
     width: 350px;
+
+    
 }
 .form-cadastrar button {
     background-color: #065B4F;
@@ -58,19 +65,23 @@ input {
     border-radius: 20px;
     color: #CED4DA;
     cursor: pointer;
+}
+.form-login.active{
+    bottom: 1%;
 } 
 .form-login {
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    /* bottom: 79%; */
-    transform: translateX(50%);
+    left: 55%;
+    bottom: 79%;
+    transform: translateX(100%);
     transform: translateY(90%);
-    width: calc(95% - 300px);
+    width: calc(100% - 400px);
     padding: 20px 115px;
     height: 100%;
-    background-color: #24807F;
-    border-radius: 40%;
+
+    background-color: #ff0000;
+    /* background-color: #24807F; */
+    border-radius: 30%;
 }
 .form-login button {
     background-color: #1E2A4F;
@@ -88,3 +99,27 @@ input {
     height: 450px;
     margin-right: 2%;
 }
+
+/*
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container {
+    background-color: whitesmoke;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+*/
