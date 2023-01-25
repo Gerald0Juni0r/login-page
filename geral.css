@@ -6,7 +6,6 @@
     text-decoration: none;
     color: #1E2A4F;
 }
-
 body {
     min-height: 100vh;
     display: flex;
@@ -31,6 +30,7 @@ input {
     display: flex;
     align-items: center;
     overflow: hidden;
+    padding-bottom: 0%;
 }
 .section-principal form {
     display: flex;
@@ -44,12 +44,11 @@ input {
 .form-cadastrar {
     position: relative;
     background-color: #1CC0A9;
-    box-shadow: 0px 5px 10px rgb(0 0 0 / 25%);
-    border-radius: 20px;
+    /* box-shadow: 0px 5px 10px rgb(0 0 0 / 25%); */
+    border-radius: 15px;
     padding: 20px 30px 60px;
     width: 350px;
-
-    
+    right: 5%;
 }
 .form-cadastrar button {
     background-color: #065B4F;
@@ -67,21 +66,21 @@ input {
     cursor: pointer;
 }
 .form-login.active{
-    bottom: 1%;
-} 
+    bottom: 1%;  
+}
 .form-login {
     position: absolute;
-    left: 55%;
+    left: 41.8%;
     bottom: 79%;
     transform: translateX(100%);
     transform: translateY(90%);
-    width: calc(100% - 400px);
-    padding: 20px 115px;
-    height: 100%;
-
-    background-color: #ff0000;
-    /* background-color: #24807F; */
-    border-radius: 30%;
+    width: 350px;
+    padding: 20px 40px;
+    margin-left: 9.3%;
+    height: 88%;
+    padding-top: 10px;
+    background-color: #16a1b9;
+    border-radius: 80px 80px 15px 15px;
 }
 .form-login button {
     background-color: #1E2A4F;
@@ -95,11 +94,17 @@ input {
     justify-content: space-between;
 }
 #imagem-login {
-    width: 450px;
-    height: 450px;
-    margin-right: 2%;
+    width: 400px;
+    height: 400px;
 }
 
+@media (max-width = 800px) {
+    #imagem-login {
+        width: 200px;
+        height: 200px;
+        margin: 0 50%;
+    }
+}
 /*
 body {
     width: 100vw;
