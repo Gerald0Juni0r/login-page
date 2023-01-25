@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #1E2A4F;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24807F;
+    font-size: 14px;
+}
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input {
+    padding: 5px;
+    border-radius: 20px;
+}
+.section-principal {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.section-principal form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 20px;
+}
+.form-cadastrar {
+    position: relative;
+    background-color: #1CC0A9;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 25%);
+    border-radius: 40px;
+    padding: 20px 30px 60px;
+    width: 350px;
+}
+.form-cadastrar button {
+    background-color: #065B4F;
+}
+.form-cadastrar button:hover {
+    background-color: #CED4DA;
+    color: #065B4F;
+}
+.form-cadastrar button, .form-login button {
+    margin-top: 5%;
+    padding: 10px 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #CED4DA;
+    cursor: pointer;
+} 
+.form-login {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /* bottom: 79%; */
+    transform: translateX(50%);
+    transform: translateY(90%);
+    width: calc(95% - 300px);
+    padding: 20px 115px;
+    height: 100%;
+    background-color: #24807F;
+    border-radius: 40%;
+}
+.form-login button {
+    background-color: #1E2A4F;
+}
+.form-login button:hover {
+    background-color: #CED4DA;
+    color: #1E2A4F;
+}
+.checkbox-senha {
+    display: flex;
+    justify-content: space-between;
+}
+#imagem-login {
+    width: 450px;
+    height: 450px;
+    margin-right: 2%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login page | Geraldo Júnior</title>
+
+
+    <link rel="stylesheet" href="geral.css">
+</head>
+<body>
+    <main>
+        <section class="section-principal">
+            <img id="imagem-login" src="img/img-login.png" alt="">
+            <div class="form-cadastrar">
+                <header>CADASTRAR</header>
+                <form action="#">
+                    <p>Nome</p>
+                    <input type="text" placeholder="João da Silva" required>
+                    <p>Login</p>
+                    <input type="text" placeholder="JhonSilva" required>
+                    <p>E-mail</p>
+                    <input type="email" placeholder="JSilva123@gmail.com" required>
+                    <p>Senha</p>
+                    <input type="password" placeholder="********" required>
+                    <p>Confirmar senha</p>
+                    <input type="password" placeholder="********" required>
+                    <div>
+                        <input type="checkbox"> Lembrar senha</input>
+                    </div>
+                    <div>
+                        <input type="checkbox" required> Aceito todos os termos e condições</input>
+                    </div>
+                    <button>CADASTRAR-SE</button>
+                </form>
+            </div>
+            <div class="form-login">
+                <header>LOGIN</header>
+                <form action="#">
+                    <p>Login</p>
+                    <input type="text" placeholder="JhonSilva" required>
+                    <p>Senha</p>
+                    <input type="password" placeholder="********" required>
+                    <div class="checkbox-senha">
+                        <div>
+                            <input type="checkbox">Lembrar senha</input>
+                        </div>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button>ENTRAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
