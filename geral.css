@@ -44,7 +44,6 @@ input {
 .form-cadastrar {
     position: relative;
     background-color: #1CC0A9;
-    /* box-shadow: 0px 5px 10px rgb(0 0 0 / 25%); */
     border-radius: 15px;
     padding: 20px 30px 60px;
     width: 350px;
@@ -72,7 +71,6 @@ input {
     position: absolute;
     left: 41.8%;
     bottom: 79%;
-    transform: translateX(100%);
     transform: translateY(90%);
     width: 350px;
     padding: 20px 40px;
@@ -99,4 +97,17 @@ input {
 #imagem-login {
     width: 400px;
     height: 400px;
+}
+
+@media (max-width: 690px) {
+    #imagem-login {
+        display: none;
+    }
+    .form-cadastrar {
+        right: 0;
+    }
+    .form-login {
+        left: 0;
+        margin-left: 0;
+    }
 }

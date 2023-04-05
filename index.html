@@ -21,20 +21,24 @@
                         <p>Nome</p>
                         <input type="text" placeholder="João da Silva" required>
                         <p>Login</p>
-                        <input type="text" placeholder="JhonSilva" required>
+                        <input class="login" type="text" placeholder="JhonSilva" required>
+                        <p class="alertaParagrafo"></p> <!-- Isso é um p[0] -->
                         <p>E-mail</p>
                         <input type="email" placeholder="JSilva123@gmail.com" required>
                         <p>Senha</p>
-                        <input type="password" placeholder="********" required>
+                        <input class="senha" type="password" placeholder="********" required>
+                        <p class="alertaParagrafo"></p> <!-- Isso é um p[1] -->
                         <p>Confirmar senha</p>
-                        <input type="password" placeholder="********" required>
+                        <input class="senha" type="password" placeholder="********" required>
+                        <p class="alertaParagrafo"></p> <!-- Isso é um p[2] -->
                         <div>
                             <input type="checkbox"> Lembrar senha</input>
                         </div>
                         <div>
                             <input type="checkbox" required> Aceito todos os termos e condições</input>
                         </div>
-                        <button>CADASTRAR-SE</button>
+                        
+                        <button type="reset" onclick="cadastrar(); recarregarAPagina()">CADASTRAR-SE</button>
                     </form>
                 </div>
             <section>
@@ -43,15 +47,18 @@
                 <form action="#">
                     <p>Login</p>
                     <input type="text" placeholder="JhonSilva" required>
+                    <p class="alertaParagrafo"></p> <!-- Isso é um p[3] -->
                     <p>Senha</p>
                     <input type="password" placeholder="********" required>
+                    <p class="alertaParagrafo"></p> <!-- Isso é um p[4] -->
                     <div class="checkbox-senha">
                         <div>
                             <input type="checkbox">Lembrar senha</input>
                         </div>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <button>ENTRAR</button>
+                    <a href='https://www.freecodecamp.org/'><button>ENTRAR</button></a>
+                    
                 </form>
             </div>
         </section>
