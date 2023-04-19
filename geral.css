@@ -14,12 +14,59 @@ body {
     background-color: #24807F;
     font-size: 14px;
 }
-header {
+h1 {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
     cursor: pointer;
 }
+
+
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #0d009c;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+    color: #0d009c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0
+}
+
+
+
 input {
     padding: 5px;
     border-radius: 20px;
@@ -49,16 +96,16 @@ input {
     width: 350px;
     right: 5%;
 }
-.form-cadastrar button {
+.buttonCadastrar {
     background-color: #065B4F;
 }
-.form-cadastrar button:hover {
+.buttonCadastrar:hover {
     background-color: #CED4DA;
     color: #065B4F;
 }
-.form-cadastrar button, .form-login button {
+.buttonCadastrar, .button{
     margin-top: 5%;
-    padding: 10px 50px;
+    padding: 3% 40%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     color: #CED4DA;
@@ -83,10 +130,13 @@ input {
 .form-login form {
    padding-top: 25%;
 }
-.form-login button {
-    background-color: #1E2A4F;
+.button{
+    background-color: #1E2A4F;    
+    padding-right: 43%;
+    padding-left: 43%;
+    margin: 0;
 }
-.form-login button:hover {
+.button:hover {
     background-color: #CED4DA;
     color: #1E2A4F;
 }
